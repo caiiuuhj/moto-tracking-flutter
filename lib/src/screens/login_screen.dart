@@ -48,7 +48,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
       if (!mounted) return;
 
-      if (res.cod == 0) {
+      if (res.cod == 100) {
         final id = (res.dados['id'] ?? '').toString();
         final nome = (res.dados['nome'] ?? '').toString();
 
